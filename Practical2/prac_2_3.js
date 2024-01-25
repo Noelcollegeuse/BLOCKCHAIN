@@ -1,20 +1,34 @@
-function fibonacci(num) {
-    if(num < 2) {
-        return num;
-    }
-    else {
-        return fibonacci(num-1) + fibonacci(num - 2);
-    }
+const prompt = require("prompt-sync")();
+const BlockChain = require("./Blockchain");
+var bitcoin = new BlockChain();
+bitcoin.createNewBlock(123, "genesis", "block1");
+//bitcoin.createNewTransaction(0, "Default", "Default");
+var nonce;
+var hash;
+var phash;
+var transactions;
+function myLoop() {
+  var choice = "Y";
+  console.log("NEW 5 seconds LOOP");
+  //Add while(true), add pending transactions to the block
+  while (choice == "Y") {
+    amount = prompt("Enter amount: ");
+    sender = prompt("Enter sender: ");
+    recipient = prompt("Enter recipient: ");
+    bitcoin.createNewTransaction(amount, sender, recipient);
+    choice = prompt("Continue? Y or N ");
+  }
+}
+function myBlockLoop() {
+  bitcoin.createNewBlock(nonce, phash, hash);
 }
 
-// take nth term input from the user
-const nTerms = prompt('Enter the number of terms: ');
-
-if(nTerms <=0) {
-    console.log('Enter a positive integer.');
-}
-else {
-    for(let i = 0; i < nTerms; i++) {
-        console.log(fibonacci(i));
-    }
-}
+let intervalId = setInterval(myLoop, 5000);
+let blockID = setInterval(myBlockLoop, 5000);
+// Stop the loop after 1 minute (60 seconds)
+setTimeout(() => {
+  clearInterval(intervalId);
+  clearInterval(blockID);
+  console.info(JSON.stringify(bitcoin, null, "  "));
+}, 20000);
+//console.info(JSON.stringify(bitcoin, null, "  "));
