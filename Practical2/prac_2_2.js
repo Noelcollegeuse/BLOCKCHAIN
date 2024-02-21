@@ -1,5 +1,5 @@
 const prompt=require('prompt-sync')();
-const Blockchain = require('./prac_2_1')
+const Blockchain = require('./Blockchain')
 var bitcoin = new Blockchain;
 bitcoin.createNewBlock(123,'genesis','block1');
 var nonce;
