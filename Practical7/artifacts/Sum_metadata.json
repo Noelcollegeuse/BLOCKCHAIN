@@ -1,0 +1,64 @@
+{
+	"compiler": {
+		"version": "0.8.22+commit.4fc1097e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256[]",
+						"name": "array",
+						"type": "uint256[]"
+					}
+				],
+				"name": "sumArray",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Practical7/prac7_5whentousememory.sol": "Sum"
+		},
+		"evmVersion": "shanghai",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Practical7/prac7_5whentousememory.sol": {
+			"keccak256": "0xd1a13614dfd8ec6dcaf1d530d12dbee2202a09c0d4798f07442772c00248d865",
+			"urls": [
+				"bzz-raw://555bfb0c209b457d18dcde882e13720272422ac89c864f074e7ac042109b3bc4",
+				"dweb:/ipfs/QmRk5kF4XgUSmZeetcskCz1sMiuQkGx3XSLhFGBK45x3Qr"
+			]
+		}
+	},
+	"version": 1
+}

@@ -1,0 +1,64 @@
+{
+	"compiler": {
+		"version": "0.8.22+commit.4fc1097e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "ownerAddress",
+						"type": "address"
+					}
+				],
+				"name": "isOwner",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Practical7/prac7_6whentousecalldata.sol": "Calldatatype"
+		},
+		"evmVersion": "shanghai",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Practical7/prac7_6whentousecalldata.sol": {
+			"keccak256": "0x565146fb65b5e85da488794f66f6f47eba2c11f61b015d9c1d32acb2d6d9ab0d",
+			"urls": [
+				"bzz-raw://bb960a5dedcb8818423bd215cad9ff28b6cd4e7ae98fa39cc0e8c6ac67ccc058",
+				"dweb:/ipfs/QmZubytzWKkrHRHRL1Tsfb2TnswkwHeT7MFg2p7dbggQT4"
+			]
+		}
+	},
+	"version": 1
+}
